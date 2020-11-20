@@ -14,6 +14,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>header</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     </head>
     <body>
 
@@ -95,7 +99,11 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <div class="navbar-brand logo-nav-left ">
-                                <h1 class="animated wow pulse" data-wow-delay=".5s"><a href="index.jsp">FPT<span> ACOUSTIC SHOP</span></a></h1>
+                                <!--                                <h1 class="animated wow pulse" data-wow-delay=".5s"><a href="index.jsp">FPT<span style="font-family: 'Dancing Script', cursive; font-size: 30px;"> ACOUSTIC SHOP</span></a></h1>-->
+                                <h1>
+                                    <a href="index.jsp" style="text-decoration: none;"><span style="font-family: 'Shadows Into Light', cursive;font-size: 70px;color: chocolate;">FPT</span></a>
+                                    <span style="font-family: 'Sacramento', cursive;text-decoration:underline;font-size: 25px;font-weight: 500">Acoustic Shop</span>
+                                </h1>
                             </div>
 
                         </div> 

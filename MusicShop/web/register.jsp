@@ -111,14 +111,54 @@
                                 <i class="glyphicon glyphicon-user"></i>
                                 <span id="user-result"></span>
                             </div>
-                            <div class="login-mail">
-                                <input type="text" placeholder="Email" name="email" id="email" required>
-
-                                <i class="glyphicon glyphicon-envelope"></i>
-                                <span id="user-result"></span>
+                            <div class="login-mail"> 
+                                <input type="text" placeholder="Email" name="email" id="email" required >
+                                <p class="error_mssg" style="color:#fa4b2a"> Email Khong Hop Le !
+                                    <script>$(document).ready(function () {
+                                            $('.error_mssg').hide();
+                                            $('.submit').click(function (event) {
+                                                var data = $('#email').val();
+                                                if (email_validate(data))
+                                                {
+                                                    // hides error msg if validation is true
+                                                } else
+                                                {
+                                                    $('.error_mssg').show(); // shows validation msg if validation is false
+                                                    event.preventDefault();
+                                                }
+                                                function email_validate(email)
+                                                {
+                                                    var regexPattern = new RegExp(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/); // regular expression pattern
+                                                    return regexPattern.test(email);
+                                                }
+                                            })
+                                        });</script>
+                                    <i class="glyphicon glyphicon-envelope"></i>
+                                    <span id="user-result"></span>
                             </div>
                             <div class="login-mail">
                                 <input type="text" placeholder="Điện thoại" name="phone" id="phone" required>
+                                <p class="error_Msg" style="color:#fa4b2a"> So Dien Thoai Khong Hop Le !
+                                </p>
+                                <script>$(document).ready(function () {
+                                        $('.error_Msg').hide();
+                                        $('.submit').click(function (event) {
+                                            var data = $('#phone').val();
+                                            if (phone_validate(data))
+                                            {
+                                                // hides error msg if validation is true
+                                            } else
+                                            {
+                                                $('.error_Msg').show(); // shows validation msg if validation is false
+                                                event.preventDefault();
+                                            }
+                                            function phone_validate(phno)
+                                            {
+                                                var regexPattern = new RegExp(/((09|03|07|08|05)+([0-9]{8})\b)/); // regular expression pattern
+                                                return regexPattern.test(phno);
+                                            }
+                                        })
+                                    });</script>
 
                                 <i class="glyphicon glyphicon-phone"></i>
                                 <span id="user-result"></span>
@@ -140,7 +180,6 @@
                                         } else
                                             $('#message').html('Không trùng khớp').css('color', 'red');
                                     });
-
                                 </script>
 
 
@@ -151,9 +190,32 @@
                                 <script type="text/javascript">
                                     document.write("Kết quả của " + a + " + " + b + " là ? ");
                                 </script>
-                                <input type="input" name="input" value="" />
+                                <input type="input" name="input" id='check_code' value="" />
+                                <p class="error_code" style="color:#fa4b2a"> Dap An Khong Hop Le !
+                                </p>
+                                <p class="empty_answer" style="color:#fa4b2a"> Khong Duoc De Trong !
+                                </p>
+                                <script> $(document).ready(function () {
+                                        $('.error_code').hide();
+                                        $('.empty_answer').hide();
+                                        $('.submit').click(function (event) {
+                                            var data = $('#check_code').val();
+                                            console.log(data);
+                                            if (data == (a + b))
+                                            {
+                                                event.preventDefault();
+                                                // hides error msg if validation is true
+                                            } else if (data === '')
+                                            {
+                                                $('.empty_answer').show(); // shows validation msg if validation is false
+                                                event.preventDefault();
+                                            } else {
+                                                $('.error_code').show(); // shows validation msg if validation is false
+                                                event.preventDefault();
+                                            }
 
-
+                                        })
+                                    });</script>
 
                                 <i class="glyphicon glyphicon-question-sign"></i>
                                 <span></span>
@@ -161,20 +223,34 @@
                             </div>
 
                             <div class="login-mail" href="#">
-                                <label class="checkbox1"><input type="checkbox" name="checkbox" ><i> </i>Tôi đồng ý với các điều khoản.</label>
+                                <label class="checkbox1"><input type="checkbox" name="checkbox" id="checkbox" ><i> </i>Tôi đồng ý với các điều khoản.</label>
                                 <fieldset disabled>
                                     <div class="form-group">
-                                        <label for="disabledTextInput">Điều khoản tại website HUTECH ACOUSTIC SHOP</label>
+                                        <label for="disabledTextInput">Điều khoản tại website FPT ACOUSTIC SHOP</label>
                                         <textarea type="text" id="disabledTextInput" class="form-control" placeholder="">* Mua hàng tại HAS không được đổi trả. &#10;* Bạn hãy chắc địa chỉ bạn gửi là đúng. &#10;* Sau 3 ngày không chuyển khoản, đơn hàng sẽ xóa.&#10;* Phải biết rằng admin cute phô mai que :3</textarea>
                                 </fieldset>
+                                <p class="error_check" style="color:#fa4b2a"> Ban Chua Dong Y Voi Dieu Khoan Cua Chung Toi !
+                                </p>
+                                <script>
+                                    $(document).ready(function () {
+                                        
+                                        $('.submit').click(function (event) {
+                                            $("input[type='checkbox'][name='checkbox']").change(function () {
+                                                if ($("input[type='checkbox'][name='checkbox']:checked").length) {
+                                                    $(this).valid()
+                                                }
+                                            })
 
+                                        })
+                                    });
+                                </script>
                             </div>
 
                         </div>
                         <div class="col-md-6 login-do animated wow fadeInRight" data-wow-delay=".5s">
                             <label class="hvr-sweep-to-top login-sub">
                                 <input type="hidden" value="insert" name="command">
-                                <input type="submit" value="Đăng Ký">
+                                <input type="submit" class= "submit" value="Đăng Ký" >
                             </label>
 
                             <p>Bạn đã có tài khoản ?</p>
@@ -199,7 +275,7 @@
                         <a href="#">GOOGLE+</a>
                     </div>
                     <div class="col-sm-3 social-ic">
-                        <a href="#">PINTEREST</a>
+                        <a href="#">INSTAGRAM</a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
