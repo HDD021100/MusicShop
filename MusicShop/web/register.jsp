@@ -200,10 +200,9 @@
                                         $('.empty_answer').hide();
                                         $('.submit').click(function (event) {
                                             var data = $('#check_code').val();
-                                            console.log(data);
                                             if (data == (a + b))
                                             {
-                                                event.preventDefault();
+
                                                 // hides error msg if validation is true
                                             } else if (data === '')
                                             {
@@ -223,7 +222,7 @@
                             </div>
 
                             <div class="login-mail" href="#">
-                                <label class="checkbox1"><input type="checkbox" name="checkbox" id="checkbox" ><i> </i>Tôi đồng ý với các điều khoản.</label>
+                                <label class="checkbox1"><input type="checkbox" name="checked" id ="checkbox" ><i> </i>Tôi đồng ý với các điều khoản.</label>
                                 <fieldset disabled>
                                     <div class="form-group">
                                         <label for="disabledTextInput">Điều khoản tại website FPT ACOUSTIC SHOP</label>
@@ -233,16 +232,19 @@
                                 </p>
                                 <script>
                                     $(document).ready(function () {
-                                        
-                                        $('.submit').click(function (event) {
-                                            $("input[type='checkbox'][name='checkbox']").change(function () {
-                                                if ($("input[type='checkbox'][name='checkbox']:checked").length) {
-                                                    $(this).valid()
+                                        $('.error_check').hide();
+                                        $('input[type="checkbox"]').click(function (event) {
+                                            if (this.checked) {
+                                                if ($(this).attr('id') == "checkbox" &&  $(this).attr('name') == "checked") {
+                                                   $('.error_check').hide();                                                   
+                                                }else{
+                                                     $('.error_check').show();
+                                                     event.preventDefault();
                                                 }
-                                            })
-
-                                        })
+                                            }
+                                        });
                                     });
+                                    
                                 </script>
                             </div>
 

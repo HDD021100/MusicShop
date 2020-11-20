@@ -3,44 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/css/animate.min.css</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/contact.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/footer.jsp</file>
+            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/myaccount.jsp</file>
+            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/model/Product.java</file>
             <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/products.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/login.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/banner.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/css/mos-style.css</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/header.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/checkoutstep.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/index.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/controller/ChartServlet.java</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/thankyoudelivery.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/admin/header.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/admin/content.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/admin/trangchu.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/css/style.css</file>
+            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/register.jsp</file>
             <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/checkout.jsp</file>
             <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/controller/UserServlet.java</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/admin/insert_category.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/single.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/img/headerbg.jpg</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/controller/ContactServlet.java</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/register_1.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/admin/index.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/thankyoureview.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/controller/InsertProductServletx.java</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/img/fptss.PNG</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/admin/login.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/controller/DeliveryServlet.java</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/controller/CartServlet.java</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/get/BillDetailGet.java</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/controller/CheckEmailServlet.java</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/admin/footer.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/controller/CheckOutServlet.java</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/register.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/src/java/controller/AdminUserServlet.java</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/admin/insert_brand.jsp</file>
-            <file>file:/C:/Users/DATHHFU/Desktop/MusicShop/MusicShop/web/admin/insert_product.jsp</file>
         </group>
     </open-files>
 </project-private>

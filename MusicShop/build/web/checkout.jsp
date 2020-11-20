@@ -92,7 +92,6 @@
                                 <div class="quantity-select">            
                                     <div class="entry value-minus">&nbsp;</div>
                                     <div class="entry value"><span class="span-1"><%=list.getValue().getQuantity()%></span></div>									
-
                                     <div class="entry value-plus active">&nbsp;</div>
                                 </div>
 
