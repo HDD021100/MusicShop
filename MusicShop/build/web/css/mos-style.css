@@ -110,24 +110,25 @@ tr.data:hover small {color: #5b5b5b;}
 #header {
     width: 100%;
     border-bottom: 1px solid #dcdcdc;
-    background: url(../img/headerbg.jpg) repeat left;
+    /*background: url(../img/headerbg.jpg) repeat left;*/
     height: 75px;
+    background-color: #f0f0f0 ;
     z-index: 1000;
     -moz-box-shadow: 0px 0px 8px #dcdcdc;
     -webkit-box-shadow: 0px 0px 8px #dcdcdc;
 }
 .inHeader {
     float: center;
-    background: url(../img/logo.png) no-repeat left center;
+    background: url(../img/fptss.PNG) no-repeat left center;
     margin: auto;
-    width: 920px;
+    width: 1520px;
     height: 45px;
-    padding: 15px;
+    padding: 17px;
     border-right: 0px solid #dcdcdc;
     border-left: 0px solid #dcdcdc;
 }
 .inHeaderLogin {
-    background: url(../img/logo.png) no-repeat left center;
+    background: url(../img/fptss.PNG  ) no-repeat left center;
     height: 75px;
 }
 .mosAdmin {
