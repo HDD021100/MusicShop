@@ -83,7 +83,20 @@ public class BillGet {
         }
         return null;
     }
-     
+     public boolean deleteBill(long id) {
+        try {
+            Connection connection = DBConnect.getConnecttion();
+            String sql = "DELETE FROM musicshop.bill where bill_id = " +id;
+            PreparedStatement ps = connection.prepareStatement(sql);
+            boolean result=ps.execute();
+                 if (result) {
+                return true;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(BillGet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return false;
+    }
       
     
     public static void main(String[] args) throws SQLException {

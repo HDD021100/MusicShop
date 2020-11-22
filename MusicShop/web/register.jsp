@@ -107,11 +107,12 @@
                         <div class="col-md-6 login-do1 animated wow fadeInLeft" data-wow-delay=".5s">
                             <div class="login-mail">
                                 <input type="text" placeholder="Tên đăng nhập" name="name" id="name" required>
-
                                 <i class="glyphicon glyphicon-user"></i>
                                 <span id="user-result"></span>
                             </div>
+                            
                             <div class="login-mail"> 
+                                
                                 <input type="text" placeholder="Email" name="email" id="email" required >
                                 <p class="error_mssg" style="color:#fa4b2a"> Email Khong Hop Le !
                                     <script>$(document).ready(function () {

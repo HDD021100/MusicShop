@@ -56,7 +56,7 @@
                             <td class="data"><%=bill.getDate()%></td>
                             <td class="data" width="75px">
                                 <center>
-                                    <a href="#">Xác nhận </a>&nbsp;&nbsp; | &nbsp;&nbsp;
+                                    <a href="${root}/BillServlet?bill_id=<%=bill.getBillID()%>">Xác Nhận</a>&nbsp;&nbsp; | &nbsp;&nbsp;
                                     <a href="#">Hủy</a>
                                 </center>
                             </td>

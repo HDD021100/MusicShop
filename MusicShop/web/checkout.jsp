@@ -87,7 +87,8 @@
 
                             <h3><%=list.getValue().getProduct().getProductName()%></h3>
                         </td>
-                        <td class="t-data"><%=formatter.format(list.getValue().getProduct().getProductPrice())%> VNĐ</td>
+
+                        <td class="t-data price"><%=formatter.format(list.getValue().getProduct().getProductPrice())%> VNĐ</td>
                         <td class="t-data"><div class="quantity"> 
                                 <div class="quantity-select">            
                                     <div class="entry value-minus">&nbsp;</div>
@@ -96,7 +97,30 @@
                                 </div>
 
                             </div>
+                            <script>
+                                $(document).ready(function () {
+                                    $('.value-plus').on('click', function () {
+                                        var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) + 1;
+                                        divUpd.text(newVal);
+                                        localStorage.setItem("value", newVal);
 
+                                    });
+
+                                    $('.value-minus').on('click', function () {
+                                        var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) - 1;
+                                        if (newVal >= 1) {
+                                            divUpd.text(newVal);
+                                            localStorage.setItem("value", newVal);
+                                        }
+                                    });
+                                });
+                                window.onload = function () {
+                                    var name = localStorage.getItem("value");
+                                    if (name !== null)
+                                        $('.value').text(name);
+                                }
+                               
+                            </script>
 
                         </td>
 
@@ -133,18 +157,7 @@
             </div>
         </div>
         <!--quantity-->
-        <script>
-            $('.value-plus').on('click', function () {
-                var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) + 1;
-                divUpd.text(newVal);
-            });
 
-            $('.value-minus').on('click', function () {
-                var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10) - 1;
-                if (newVal >= 1)
-                    divUpd.text(newVal);
-            });
-        </script>
         <!--quantity-->
 
         <div class="social animated wow fadeInUp" data-wow-delay=".1s">
